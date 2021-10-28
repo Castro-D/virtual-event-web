@@ -1,5 +1,5 @@
-/* eslint-disable import/extensions */
 import mapAttendees from './mapper/attendeeMapper.js';
+import saveAttendee from './attendee.js';
 
 const $formData = document.querySelectorAll('#form input');
 const $submitButton = document.querySelector('#submit-button');
@@ -11,5 +11,5 @@ $submitButton.onclick = () => {
   });
   const attendee = { id: Date.now(), ...formData };
   const properAttendee = mapAttendees(attendee);
-  console.log(properAttendee);
+  saveAttendee(properAttendee);
 };

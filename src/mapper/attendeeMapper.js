@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import Attendee from '../entity/attendee.js';
 
 export default function mapAttendees({
