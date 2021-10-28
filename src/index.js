@@ -1,15 +1,14 @@
 import mapAttendees from './mapper/attendeeMapper.js';
 import saveAttendee from './attendee.js';
+import getFormData from './ui/form.js';
 
-const $formData = document.querySelectorAll('#form input');
-const $submitButton = document.querySelector('#submit-button');
+function handleOnClick(attendee) {
+  const entity = mapAttendees(attendee);
+  saveAttendee(entity);
+}
 
-$submitButton.onclick = () => {
-  const formData = {};
-  $formData.forEach((data) => {
-    formData[`${data.id}`] = data.value;
-  });
-  const attendee = { id: Date.now(), ...formData };
-  const properAttendee = mapAttendees(attendee);
-  saveAttendee(properAttendee);
-};
+function initialize() {
+  getFormData(handleOnClick);
+}
+
+initialize();
