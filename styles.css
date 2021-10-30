@@ -64,7 +64,6 @@
   font-family: sharp-sans;
   text-align: center;
   font-size: 40px;
-  width: 960px;
   line-height: 52px;
   position: relative;
   color: #02363D;
@@ -80,6 +79,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .left-content {
@@ -157,4 +157,119 @@ footer {
   justify-content: space-around;
   height: 160px;
   align-items: center;
+}
+
+@media screen and (max-width: 1168px){
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .card {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .title {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .header {
+    height: 180px;
+  }
+
+  .logo-img {
+    width: 450px;
+  }
+
+  .webinar-button {
+    width: 80px;
+  }
+
+  .left-content {
+    font-size: 14px;
+    line-height: normal;
+    width: 450px;
+  }
+
+  .card img {
+    width: 150px;
+  }
+
+  .form {
+    width: 300px;
+    height: 400px;
+    margin-top: 60px;
+  }
+
+  .form input {
+    width: 200px;
+    height: 25px;
+  }
+
+  .form h2 {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .inputs label {
+    font-size: 8px;
+  }
+
+  .form button {
+    width: 200px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .sub-title {
+    font-size: 14px;
+  }
+
+  .webinar-button {
+    width: 60px;
+    font-size: 10px;
+  }
+
+  .logo-img {
+    width: 320px;
+  }
+
+  .left-content {
+    width: 310px;
+  }
+
+  .card img {
+    width: 120px;
+  }
+
+  .fa-2x {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 15px;
+  }
+
+  .sub-title {
+    font-size: 10px;
+  }
 }
