@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: sharp-sans;
+  src: url('./fonts/SharpSansNo1-Bold.woff');
+}
+
+@font-face {
+  font-family: sharp-sans-medium;
+  src: url('./fonts/SharpSansNo1Medium-Regular.woff');
+}
+
+@font-face {
+  font-family: proxima-nova-regular;
+  src: url('./fonts/proximanova-regular-webfont.woff');
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -18,41 +33,128 @@
   align-items: center;
   width: 100%;
   height: 350px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/Group\ 4.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .webinar-button {
+  font-family: sharp-sans;
   width: 100px;
   padding: 10px;
+  position: relative;
+  background-color: orangered;
+  border: none;
+  color: white;
 }
 
 .title {
+  font-family: sharp-sans;
   text-align: center;
   font-size: 40px;
   width: 960px;
   line-height: 52px;
+  position: relative;
+  color: #02363D;
 }
 
 .sub-title {
   font-size: 21px;
+  position: relative;
+  color: #00373E;
+  font-family: sharp-sans-medium;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-content {
   width: 600px;
+  font-family: 'proxima-nova-regular';
+  color: #405457;
+  margin-right: 100px;
+  line-height: 28px;
 }
 
 .form {
   display: flex;
   width: 470px;
+  height: 822px;
   flex-direction: column;
   align-items: center;
+  font-family: 'sharp-sans-medium';
+  color: #02363D;
+  background-color: #F8F9F9;
+  justify-content: center;
+}
+
+.form h2 {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.form input {
+  width: 370px;
+  height: 50px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs input {
+  margin-bottom: 25px;
+}
+
+.inputs label {
+  display: block;
+  align-self: flex-start;
+  font-size: 14px;
+}
+
+.form button {
+  border: none;
+  background-color: #02363D;
+  color: white;
+  font-family: 'sharp-sans-medium';
+  width: 370px;
+  height: 50px;
+  font-size: 19px;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+}
+
+.text-content {
+  margin-bottom: 30px;
+}
+
+.text {
+  margin: 30px 0;
+}
+
+footer {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  height: 160px;
+  align-items: center;
 }
