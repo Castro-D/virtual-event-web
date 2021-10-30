@@ -14,6 +14,11 @@
   src: url('./fonts/SharpSansNo1Medium-Regular.woff');
 }
 
+@font-face {
+  font-family: proxima-nova-regular;
+  src: url('./fonts/proximanova-regular-webfont.woff');
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -78,13 +83,34 @@
 
 .left-content {
   width: 600px;
+  font-family: 'proxima-nova-regular';
+  color: #405457;
 }
 
 .form {
   display: flex;
   width: 470px;
+  height: 822px;
   flex-direction: column;
   align-items: center;
+  font-family: 'sharp-sans-medium';
+  color: #02363D;
+  background-color: #F8F9F9;
+  justify-content: space-around;
+}
+
+.form input {
+  width: 370px;
+  height: 50px;
+}
+
+.form button {
+  border: none;
+  background-color: #02363D;
+  color: white;
+  font-family: 'sharp-sans-medium';
+  width: 370px;
+  height: 50px;
 }
 
 footer {
