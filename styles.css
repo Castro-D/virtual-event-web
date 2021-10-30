@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: sharp-sans;
+  src: url('./fonts/SharpSansNo1-Bold.woff');
+}
+
+@font-face {
+  font-family: sharp-sans-medium;
+  src: url('./fonts/SharpSansNo1Medium-Regular.woff');
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -18,22 +28,47 @@
   align-items: center;
   width: 100%;
   height: 350px;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/Group\ 4.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .webinar-button {
+  font-family: sharp-sans;
   width: 100px;
   padding: 10px;
+  position: relative;
+  background-color: orangered;
+  border: none;
+  color: white;
 }
 
 .title {
+  font-family: sharp-sans;
   text-align: center;
   font-size: 40px;
   width: 960px;
   line-height: 52px;
+  position: relative;
+  color: #02363D;
 }
 
 .sub-title {
   font-size: 21px;
+  position: relative;
+  color: #00373E;
+  font-family: sharp-sans-medium;
 }
 
 .main-content {
