@@ -2,7 +2,8 @@ export function getFormData(callback) {
   const $formData = document.querySelectorAll('#form input');
   const $submitButton = document.querySelector('#submit-button');
 
-  $submitButton.onclick = () => {
+  $submitButton.onclick = (e) => {
+    e.preventDefault();
     const formData = {};
     $formData.forEach((data) => {
       formData[`${data.id}`] = data.value;
@@ -26,4 +27,15 @@ export function openModal() {
       window.location.reload();
     }
   };
+}
+
+export function getEmptyValues() {
+  const $formData = document.querySelectorAll('#form input');
+  let emptyStrings = 0;
+  $formData.forEach((input) => {
+    if (input.value === '') {
+      emptyStrings += 1;
+    }
+  });
+  return emptyStrings;
 }
