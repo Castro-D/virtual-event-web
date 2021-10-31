@@ -1,5 +1,5 @@
 import mapAttendees from './mapper/attendeeMapper.js';
-import saveAttendee from './attendee.js';
+import saveAttendee from './storage/attendee.js';
 import { getFormData, openModal, getEmptyValues } from './ui/form.js';
 import validateValues from './utilities/validator.js';
 
