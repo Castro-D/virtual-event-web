@@ -4,7 +4,9 @@
   "description": "a web for tracking attendees in a virtual event",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress-dev": "cypress open",
+    "test": "jest --collect-coverage",
+    "test:dev": "jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,16 @@
   },
   "homepage": "https://github.com/Castro-D/virtual-event-web#readme",
   "devDependencies": {
+    "cypress": "^8.7.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.2"
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^27.3.1"
   },
   "dependencies": {
-    "uuid": "^8.3.2"
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.3.1"
   }
 }
