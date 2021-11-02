@@ -1,7 +1,5 @@
 # virtual-event-web
 
-## Demo at : https://virtual-event-web.vercel.app/
-
 ## Tech stack
 * Javascript
 * Html
@@ -24,3 +22,5 @@
 ```npm run test:cypress:dev``` to run cypress in development mode
 ```npm run test``` to run jest tests
 ```npm run test:dev``` to run jest tests in development mode
+
+### Demo at : https://virtual-event-web.vercel.app/
