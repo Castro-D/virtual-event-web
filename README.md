@@ -8,15 +8,15 @@
 * Jest
 
 ## How to run
-#install dependencies
+# install dependencies
 
 ```npm install``` to install dependencies
 
-#Run app
+# Run app
 
 ```npm run start``` to start the project ( need to install http-server first )
 
-#test scripts
+# test scripts
 
 ```npm run test:cypress``` to run cypress tests in headless mode
 ```npm run test:cypress:dev``` to run cypress in development mode
