@@ -19,8 +19,12 @@
 ### test scripts
 
 ```npm run test:cypress``` to run cypress tests in headless mode
+
 ```npm run test:cypress:dev``` to run cypress in development mode
+
 ```npm run test``` to run jest tests
+
 ```npm run test:dev``` to run jest tests in development mode
+
 
 ### Demo at : https://virtual-event-web.vercel.app/
