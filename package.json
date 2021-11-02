@@ -4,7 +4,9 @@
   "description": "a web for tracking attendees in a virtual event",
   "main": "index.js",
   "scripts": {
-    "cypress-dev": "cypress open",
+    "start": "http-server -c-1",
+    "test:cypress": "cypress run",
+    "test:cypress:dev": "cypress open",
     "test": "jest --collect-coverage",
     "test:dev": "jest --watchAll --verbose"
   },
